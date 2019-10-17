@@ -19,7 +19,7 @@
     <!--秒杀活动-->
     <!--推荐内容-->
     <van-row>
-      <van-col offset="2">
+      <van-col offset="1">
         <van-panel>
           <!--<van-image-->
             <!--width="155"-->
@@ -45,7 +45,7 @@
     </van-col>
     </van-row>
     <van-row>
-      <van-col offset="2">
+      <van-col offset="1">
         <van-panel>
           <img :src="image3" style="width: 155px;height:155px;" />
           <div id="a3">
