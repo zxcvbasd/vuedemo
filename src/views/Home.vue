@@ -19,27 +19,48 @@
     <!--秒杀活动-->
     <!--推荐内容-->
     <van-row>
-      <van-col offset="4">
+      <van-col offset="1">
         <van-panel>
-          <van-image
-            width="100"
-            height="100"
-            src="https://img.yzcdn.cn/public_files/2017/10/24/1791ba14088f9c2be8c610d0a6cc0f93.jpeg"
-          />
-          <p>苹果</p>
-          <div>内容</div>
+          <!--<van-image-->
+            <!--width="155"-->
+            <!--height="155"-->
+            <!--src="https://img.yzcdn.cn/public_files/2017/10/24/1791ba14088f9c2be8c610d0a6cc0f93.jpeg"-->
+          <!--/>-->
+          <img :src="image1" style="width: 155px;height:155px;" />
+          <div id="a1">
+            <p>苹果</p>
+            <div>5499</div>
+          </div>
         </van-panel>
       </van-col>
-      <van-col offset="4">
+      <van-col offset="2">
+      <van-panel>
+        <img :src="image2" style="width: 155px;height:155px;" />
+        <div id="a2">
+          <!--<p>商品名称:{{productList.name}}</p>-->
+          <p>oppo{{productList.price}}</p>
+          <div>3299</div>
+        </div>
+      </van-panel>
+    </van-col>
+      <van-col offset="1">
         <van-panel>
-          <van-image
-            width="100"
-            height="100"
-            src="https://img.yzcdn.cn/public_files/2017/10/24/e5a5a02309a41f9f5def56684808d9ae.jpeg"
-          />
-          <p>商品名称:{{productList.name}}</p>
-          <p>商品价格:{{productList.price}}</p>
-          <div>内容</div>
+          <img :src="image3" style="width: 155px;height:155px;" />
+          <div id="a3">
+            <!--<p>商品名称:{{productList.name}}</p>-->
+            <p>vivo{{productList.price}}</p>
+            <div>3599</div>
+          </div>
+        </van-panel>
+      </van-col>
+      <van-col offset="2">
+        <van-panel>
+          <img :src="image4" style="width: 155px;height:155px;" />
+          <div id="a4">
+            <!--<p>商品名称:{{productList.name}}</p>-->
+            <p>华为{{productList.price}}</p>
+            <div>4399</div>
+          </div>
         </van-panel>
       </van-col>
     </van-row>
@@ -60,6 +81,10 @@
     data() {
       return {
         title:'首页',
+        image1:require('@/assets/apple.jpg'),
+        image2:require('@/assets/oppo.jpg'),
+        image3:require('@/assets/vivo.jpg'),
+        image4:require('@/assets/huawei.jpg'),
         images: [
           'https://img.yzcdn.cn/vant/apple-1.jpg',
           'https://img.yzcdn.cn/vant/apple-2.jpg',
@@ -143,6 +168,18 @@
     width: 100%;
   }
   #aa{
-    height: 800px;
+    height: 1100px;
+  }
+  #a1{
+    margin-left: 40%;
+  }
+  #a2{
+    margin-left: 40%;
+  }
+  #a3{
+    margin-left: 40%;
+  }
+  #a4{
+    margin-left: 40%;
   }
 </style>
