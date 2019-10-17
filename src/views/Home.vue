@@ -65,6 +65,7 @@
           'https://img.yzcdn.cn/vant/apple-1.jpg',
           'https://img.yzcdn.cn/vant/apple-2.jpg',
           'https://img.yzcdn.cn/vant/apple-3.jpg',
+          require('@/assets/a.jpg'),
         ],
         icons: [
           {
@@ -139,7 +140,7 @@
 
 <style scoped>
   #sw-img {
-    height: 100%;
+    height: 250px;
     width: 100%;
   }
 </style>
