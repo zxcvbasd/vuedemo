@@ -1,6 +1,14 @@
 <template>
   <div class="goods">
     <top-back :content="title"></top-back>
+    <!--倒计时-->
+    <van-count-down :time="time">
+      <template v-slot="timeData">
+        <span class="item" id="tt">{{ timeData.hours }}</span>
+        <span class="item">{{ timeData.minutes }}</span>
+        <span class="item">{{ timeData.seconds }}</span>
+      </template>
+    </van-count-down>
     <!--商品图片轮播图-->
     <van-swipe class="goods-swipe" :autoplay="3000">
       <van-swipe-item v-for="(srchost,index) in goods.subImages" :key="index">
@@ -19,7 +27,6 @@
         <van-col span="14">剩余：{{ goods.stock }}</van-col>
       </van-cell>
     </van-cell-group>
-
 
     <van-panel>
       <!--分割线-->
@@ -77,6 +84,7 @@
     },
     data() {
       return {
+        time: 3000 * 60 * 60 * 1000,
         title:'商品详情',
         goods: '',
         thum: '',
@@ -296,5 +304,17 @@
     &-tag {
       margin-left: 5px;
     }
+  }
+  .item {
+    display: inline-block;
+    width: 22px;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    background-color: #1989fa;
+  }
+  #tt{
+    margin-left: 40%;
   }
 </style>

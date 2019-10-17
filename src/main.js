@@ -9,7 +9,9 @@ import { Dialog } from 'vant';
 import { Lazyload } from 'vant';
 // import 'vant/lib/index.css';
 import '@/assets/index.css';
+import { CountDown } from 'vant';
 
+Vue.use(CountDown);
 Vue.use(Toast);
 Vue.use(Dialog);
 Vue.use(Lazyload);

@@ -43,7 +43,6 @@
         </van-panel>
       </van-col>
     </van-row>
-
   </div>
 </template>
 
@@ -70,35 +69,35 @@
         icons: [
           {
             text: '外设',
-            image: 'https://gw.alicdn.com/tfs/TB11rTqtj7nBKNjSZLeXXbxCFXa-183-144.png?getAvatar=1_.webp'
+            image: require('@/assets/5.png')
           },
           {
             text: '服装',
-            image: 'https://gw.alicdn.com/tfs/TB1IKqDtpooBKNjSZFPXXXa2XXa-183-144.png_.webp'
+            image: require('@/assets/4.png')
           },
           {
-            text: '家具',
-            image: 'https://gw.alicdn.com/tfs/TB1Wxi2trsrBKNjSZFpXXcXhFXa-183-144.png_.webp'
+            text: '充值',
+            image: require('@/assets/2.png')
           },
           {
-            text: '电器',
-            image: 'https://gw.alicdn.com/tfs/TB18P98tyQnBKNjSZFmXXcApVXa-183-144.png?getAvatar=1_.webp'
+            text: '水果海鲜',
+            image: require('@/assets/8.png')
           },
           {
-            text: '零食',
-            image: 'https://gw.alicdn.com/tfs/TB1CMf4tlnTBKNjSZPfXXbf1XXa-183-144.png?getAvatar=1_.webp'
+            text: '拼团',
+            image: require('@/assets/7.png')
           },
           {
-            text: '水果',
-            image: 'https://gw.alicdn.com/tfs/TB15nKhtpkoBKNjSZFEXXbrEVXa-183-144.png?getAvatar=1_.webp'
+            text: '超市',
+            image: require('@/assets/6.png')
           },
           {
-            text: '海鲜',
-            image: 'https://img.alicdn.com/tfs/TB10UHQaNjaK1RjSZKzXXXVwXXa-183-144.png?getAvatar=1_.webp'
+            text: '钱包',
+            image: require('@/assets/3.png')
           },
           {
-            text: '蔬菜',
-            image: 'https://gw.alicdn.com/tfs/TB1o0FLtyMnBKNjSZFoXXbOSFXa-183-144.png_.webp'
+            text: '优惠卷',
+            image: require('@/assets/1.png')
           },
         ],
         users: store.state.users,
