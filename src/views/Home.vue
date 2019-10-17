@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="aa">
     <top-back :content="title"></top-back>
     <van-swipe :autoplay="3000" class="dt">
       <van-swipe-item v-for="(image, index) in images" :key="index">
@@ -141,5 +141,8 @@
   #sw-img {
     height: 250px;
     width: 100%;
+  }
+  #aa{
+    height: 800px;
   }
 </style>

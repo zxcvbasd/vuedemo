@@ -26,8 +26,8 @@
 
     <van-tabbar v-model="active" class="vbbg">
       <van-tabbar-item icon="home-o" to="/">主页</van-tabbar-item>
-      <van-tabbar-item icon="apps-o" to="/login">登录</van-tabbar-item>
-      <van-tabbar-item icon="apps-o"  to="/productdetail">商品</van-tabbar-item>
+      <van-tabbar-item icon="wap-home-o" to="/login">登录</van-tabbar-item>
+      <van-tabbar-item icon="shop-o"  to="/productdetail">商品</van-tabbar-item>
       <van-tabbar-item icon="cart-o" to="/cart">购物车</van-tabbar-item>
       <van-tabbar-item icon="contact" to="/mycenter">个人中心</van-tabbar-item>
     </van-tabbar>
